@@ -1,0 +1,20 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -4,13 +4,13 @@
+ dnl	**** the following shall be updated at each release ********************
+ dnl	************************************************************************
+ dnl define([librsb_vcs_branch],[esyscmd([sh -c "basename `svn info | grep ^URL | sed 's/URL: '//g` | tr -d '\n'"])])dnl
+-define([librsb_vcs_branch],[esyscmd([sh -c "git branch  | grep '^*' | tr -d '* \n' "])])dnl
+-dnl define([librsb_vcs_branch],[master])dnl
++dnl define([librsb_vcs_branch],[esyscmd([sh -c "git branch  | grep '^*' | tr -d '* \n' "])])dnl
++define([librsb_vcs_branch],[master])dnl
+ define([librsbtodaydate],[esyscmd([sh -c "date '+%Y%m%d%H%M' | tr -d '\n'"])])dnl
+ dnl define([librsb_vcs_revision],[esyscmd([sh -c "svnversion -n"])])dnl
+-define([librsb_vcs_revision],[esyscmd([sh -c "git log --pretty=%h -1 | cat | tr -d '\n' "])])dnl for doxygen's VERSION
++dnl define([librsb_vcs_revision],[esyscmd([sh -c "git log --pretty=%h -1 | cat | tr -d '\n' "])])dnl for doxygen's VERSION
+ #define([librsb_vcs_revision],[esyscmd([sh -c "git log --pretty=%H -1 | cat | tr -d '\n' "])])dnl for doxygen's VERSION
+-dnl define([librsb_vcs_revision],[Unversioned directory])dnl
++define([librsb_vcs_revision],[Unversioned directory])dnl
+ define([librsb_ver_major],[1])dnl
+ define([librsb_ver_minor],[3])dnl
+ define([librsb_ver_patch],[0])dnl
