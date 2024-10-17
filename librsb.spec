@@ -11,7 +11,7 @@ Version:	1.3.0.2
 Release:	1
 License:	zlib with acknowledgement
 Group:		System/Libraries
-URL:		http://librsb.sourceforge.net
+URL:		https://librsb.sourceforge.net
 Source0:	https://downloads.sourceforge.net/librsb/%{name}-%{version}.tar.gz
 
 BuildRequires:	doxygen
