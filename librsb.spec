@@ -8,7 +8,7 @@
 Summary:	A parallel sparse matrix computations library for the Recursive Sparse Blocks format
 Name:		librsb
 Version:	1.3.0.2
-Release:	1
+Release:	2
 License:	zlib with acknowledgement
 Group:		System/Libraries
 URL:		https://librsb.sourceforge.net
