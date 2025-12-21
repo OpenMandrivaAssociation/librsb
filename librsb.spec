@@ -14,6 +14,11 @@ Group:		System/Libraries
 URL:		https://librsb.sourceforge.net
 Source0:	https://downloads.sourceforge.net/librsb/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	doxygen
 BuildRequires:	help2man
 BuildRequires:	gcc-gfortran
